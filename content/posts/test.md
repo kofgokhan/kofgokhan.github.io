@@ -4,4 +4,4 @@ draft = false
 title = 'Test'
 +++
 
-$x^2$
+\[x^2\]
