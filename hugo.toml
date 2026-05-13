@@ -1,6 +1,6 @@
-baseURL = 'https://example.org/'
+baseURL = 'https://kofgokhan.github.io/'
 locale = 'en-us'
-title = 'My New Hugo Project'
+title = 'Gökhan Kof'
 [caches]
   [caches.images]
     dir = ':cacheDir/images'
