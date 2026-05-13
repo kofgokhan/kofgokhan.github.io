@@ -5,4 +5,4 @@ title = 'Math'
 math = true
 +++
 
-$x^2$
+\(x^2\)
