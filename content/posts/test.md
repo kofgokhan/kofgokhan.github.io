@@ -1,5 +1,5 @@
 +++
 date = '2026-05-13T20:36:38+03:00'
-draft = true
+draft = false
 title = 'Test'
 +++
