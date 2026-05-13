@@ -4,4 +4,4 @@ draft = false
 title = 'Math'
 +++
 
-\(x^2\)
+\(x^2 + \sqrt{5y}\)
