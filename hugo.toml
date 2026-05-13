@@ -5,4 +5,13 @@ title = 'Gökhan Kof'
   [caches.images]
     dir = ':cacheDir/images'
 
-markup.goldmark.renderer.unsafe = true
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.extensions]
+      [markup.goldmark.extensions.passthrough]
+        enable = true
+        [markup.goldmark.extensions.passthrough.delimiters]
+          block = [['\[', '\]'], ['$$', '$$']]
+          inline = [['\(', '\)']]
+[params]
+  math = true
