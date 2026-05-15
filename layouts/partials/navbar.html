@@ -1,0 +1,26 @@
+<nav class="navbar navbar-light bg-white border-bottom d-md-none barlow-regular">
+    <div class="container-fluid">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mobileLeftNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <span class="navbar-brand mb-0 h6">{{ .Site.Title }}</span>
+
+        <div class="collapse navbar-collapse mt-3" id="mobileLeftNav">
+            <nav class="nav flex-column text-center">
+                <h5>Gökhan Kof</h5>
+
+                <span class="mb-3">
+                    <a href="mailto:kofgokhan@gmail.com"><img src="/assets/envelope-at.svg" alt=""></a>
+                    <a href="https://github.com/kofgokhan"><img src="/assets/github.svg" alt=""></a>
+                </span>
+
+                <a class="nav-link" href="{{ relURL " /" }}">Home</a>
+                <a class="nav-link" href="{{ relURL " /research" }}">Research</a>
+                <a class="nav-link" href="{{ relURL " /publications" }}">Publications</a>
+                <a class="nav-link" href="{{ relURL " /gsoc26" }}">GSoC '26</a>
+                <a class="nav-link" href="{{ relURL " /misc" }}">Misc</a>
+            </nav>
+        </div>
+    </div>
+</nav>
