@@ -21,11 +21,11 @@ follower and the follower's decisions in response to the leader decisions. A pur
     \end{align*}
     \]
 
-    </span> where \(c^1 \in \mathbb{R}^{n_x}\), \(d^1 \in \mathbb{R}^{n_y}\), \(A^1 \in \mathbb{R}^{m_1
-    \times n_x}\), \(B^1 \in \mathbb{R}^{m_1 \times n_y}\), \(b^1 \in \mathbb{R}^{m_1}\), \(G \in
-    \mathbb{R}^{m_x \times n_x}\), \(g \in \mathbb{R}^{m_x}\), \(d^2 \in \mathbb{R}^{n_y}\), \(A^2 \in
-    \mathbb{R}^{m_2 \times n_x}\), \(B^2 \in \mathbb{R}^{m_2 \times n_y}\), \(b^2 \in
-    \mathbb{R}^{m_2}\), \(H \in \mathbb{R}^{m_y \times n_y}\), \(h \in \mathbb{R}^{m_y}\).
+where \(c^1 \in \mathbb{R}^{n_x}\), \(d^1 \in \mathbb{R}^{n_y}\), \(A^1 \in \mathbb{R}^{m_1
+\times n_x}\), \(B^1 \in \mathbb{R}^{m_1 \times n_y}\), \(b^1 \in \mathbb{R}^{m_1}\), \(G \in
+\mathbb{R}^{m_x \times n_x}\), \(g \in \mathbb{R}^{m_x}\), \(d^2 \in \mathbb{R}^{n_y}\), \(A^2 \in
+\mathbb{R}^{m_2 \times n_x}\), \(B^2 \in \mathbb{R}^{m_2 \times n_y}\), \(b^2 \in
+\mathbb{R}^{m_2}\), \(H \in \mathbb{R}^{m_y \times n_y}\), \(h \in \mathbb{R}^{m_y}\).
 
 ## Solution Methods
 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, mollitia. Modi saepe in
