@@ -1,4 +1,4 @@
-baseURL = 'https://kofgokhan.github.io/'
+baseURL = 'https://kofgokhan.github.io'
 locale = 'en-us'
 title = 'Gökhan Kof'
 [caches]
