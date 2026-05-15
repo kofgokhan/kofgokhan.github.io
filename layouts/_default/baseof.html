@@ -23,6 +23,53 @@
 </head>
 <body>
     {{ partial "navbar.html" . }}
-    {{ block "main" . }}{{ end }}
+
+    <div class="d-flex">
+        <div class="col-md-3 d-none d-md-flex flex-column border-end sticky-top align-self-start barlow-regular"
+            style="top: 2rem;">
+            <nav class="nav flex-column text-center">
+                <h2>Gökhan Kof</h2>
+                <a class="nav-link" href="#">
+                    <div class="text-center">
+                        <img class="rounded-circle" src="assets/me.jpg" class="img-fluid rounded">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </div>
+                </a>
+                <span>
+                    <a href="mailto:kofgokhan@gmail.com"><img src="assets/envelope-at.svg" alt=""></a>
+                    <a href="https://github.com/kofgokhan"><img src="assets/github.svg" alt=""></a>
+                </span>
+                <a class="nav-link" href="#">Home</a>
+                <a class="nav-link" href="#">Research</a>
+                <a class="nav-link" href="#">Publications</a>
+                <a class="nav-link" href="#">GSoC '26</a>
+                <a class="nav-link" href="#">Misc</a>
+            </nav>
+        </div>
+
+        <main class="col-md-6 flex-grow-1 p-4 libertinus-math-regular">
+            <div id="content" style="text-align: justify;">
+                {{ block "main" . }}{{ end }}
+            </div>
+        </main>
+
+        <aside id="right-nav" class="col-md-3 bg-white border-start p-4 d-none d-xl-block sticky-top align-self-start"
+            style="top: 2rem;">
+
+            <h6 class="text-uppercase fw-bold small text-muted mb-3">Contents</h6>
+
+            <nav class="nav flex-column">
+                <a class="nav-link small text-secondary px-0" href="#bilevel-optimization">Bilevel Optimization</a>
+                <a class="nav-link small text-secondary px-0" href="#solution-methods">Solution Methods</a>
+                <a class="nav-link small text-secondary px-0" href="#branch-and-bound-algorithm">
+                    Branch and Bound Algorithm
+                </a>
+            </nav>
+        </aside>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 </html>
