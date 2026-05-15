@@ -1,22 +1,32 @@
-<div class="col-md-3 d-none d-md-flex flex-column border-end sticky-top align-self-start barlow-regular"
-    style="top: 2rem;">
-    <nav class="nav flex-column text-center">
-        <h2>Gökhan Kof</h2>
-        <a class="nav-link" href="#">
+<!-- Left Sidebar (Desktop) -->
+<div class="col-md-3 d-none d-md-flex flex-column border-end sticky-top vh-100 align-items-center justify-content-center barlow-regular">
+    <nav class="nav flex-column text-center w-100">
+        <h2 class="mb-3">Gökhan Kof</h2>
+        
+        <a class="nav-link p-0 mb-3" href="{{ relURL "/" }}">
             <div class="text-center">
-                <img class="rounded-circle" src="/assets/me.jpg" class="img-fluid rounded">
-                <i class="bi bi-envelope-at-fill"></i>
+                <!-- Added fixed width/height and object-fit to ensure the circle is perfect -->
+                <img class="rounded-circle border" src="/assets/me.jpg" 
+                     style="width: 150px; height: 150px; object-fit: cover;" alt="Gökhan Kof">
             </div>
         </a>
-        <span>
-            <a href="mailto:kofgokhan@gmail.com"><img src="/assets/envelope-at.svg" alt=""></a>
-            <a href="https://github.com/kofgokhan"><img src="/assets/github.svg" alt=""></a>
-        </span>
-        <a class="nav-link {{ if .IsHome }}active fw-bold{{ end }}" href="{{ relURL "/" }}">Home</a>
-        <a class="nav-link {{ if .HasShortcode "research" }}active{{ end }}" href="{{ relURL "/research"
-            }}">Research</a>
-        <a class="nav-link" href="#">Publications</a>
-        <a class="nav-link" href="#">GSoC '26</a>
-        <a class="nav-link" href="#">Misc</a>
+
+        <div class="social-links mb-4">
+            <a href="mailto:kofgokhan@gmail.com" class="px-2">
+                <img src="/assets/envelope-at.svg" width="24" alt="Email">
+            </a>
+            <a href="https://github.com/kofgokhan" class="px-2">
+                <img src="/assets/github.svg" width="24" alt="GitHub">
+            </a>
+        </div>
+
+        <!-- Navigation Links -->
+        <div class="d-grid gap-2 px-4">
+            <a class="nav-link" href="{{ relURL "/" }}">Home</a>
+            <a class="nav-link" href="{{ relURL "/research" }}">Research</a>
+            <a class="nav-link" href="{{ relURL "/publications" }}">Publications</a>
+            <a class="nav-link" href="{{ relURL "/gsoc26" }}">GSoC '26</a>
+            <a class="nav-link" href="{{ relURL "/misc" }}">Misc</a>
+        </div>
     </nav>
 </div>
