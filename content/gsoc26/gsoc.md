@@ -4,6 +4,4 @@ draft = false
 title = "GSoC '26"
 +++
 
-# GSoC '26
-
 I will post any update here on this page.
