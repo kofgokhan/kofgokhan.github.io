@@ -1,0 +1,21 @@
+<div class="col-md-3 d-none d-md-flex flex-column border-end sticky-top align-self-start barlow-regular"
+            style="top: 2rem;">
+            <nav class="nav flex-column text-center">
+                <h2>Gökhan Kof</h2>
+                <a class="nav-link" href="#">
+                    <div class="text-center">
+                        <img class="rounded-circle" src="/assets/me.jpg" class="img-fluid rounded">
+                        <i class="bi bi-envelope-at-fill"></i>
+                    </div>
+                </a>
+                <span>
+                    <a href="mailto:kofgokhan@gmail.com"><img src="/assets/envelope-at.svg" alt=""></a>
+                    <a href="https://github.com/kofgokhan"><img src="/assets/github.svg" alt=""></a>
+                </span>
+                <a class="nav-link {{ if .IsHome }}active fw-bold{{ end }}" href="{{ relURL "/" }}">Home</a>
+                <a class="nav-link {{ if .HasShortcode "research" }}active{{ end }}" href="{{ relURL "/research" }}">Research</a>
+                <a class="nav-link" href="#">Publications</a>
+                <a class="nav-link" href="#">GSoC '26</a>
+                <a class="nav-link" href="#">Misc</a>
+            </nav>
+        </div>
