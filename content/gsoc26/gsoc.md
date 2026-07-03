@@ -19,3 +19,9 @@ I have also developed a `Flux` model which is an Input Convex Neural Network (IC
 Currently working on conic reformulations and more epigraph formulations. Activation functions like `softplus` can be represented with exponential cones and then we can use solvers like [MOSEK](https://github.com/MOSEK/Mosek.jl) or [SCS](https://github.com/jump-dev/SCS.jl) to solve the conic problems.
 
 I have also submitted a PR for the `Flux` tutorial of ICNN. It can be viewed [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/279).
+
+## Week 5-6
+
+This week, we have added another ICNN tuorial, this time using PyTorch. The PR for it can be viewed [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/287). We have also added a small training loop to both `Flux` [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex/) and `PyTorch` [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex_pytorch/) to show the fit on a convex function.
+
+We have also finalized and added [`SoftPlusConicEpigraph`]() with test using `SCS`. The PR for it can be viewed [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/288).
