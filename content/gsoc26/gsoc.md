@@ -24,4 +24,4 @@ I have also submitted a PR for the `Flux` tutorial of ICNN. It can be viewed [he
 
 This week, we have added another ICNN tuorial, this time using PyTorch. The PR for it can be viewed [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/287). We have also added a small training loop to both `Flux` [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex/) and `PyTorch` [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex_pytorch/) to show the fit on a convex function.
 
-We have also finalized and added [`SoftPlusConicEpigraph`]() with test using `SCS`. The PR for it can be viewed [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/288).
+We have also finalized and added [`SoftPlusConicEpigraph`](https://lanl-ansi.github.io/MathOptAI.jl/dev/api/#SoftPlusConicEpigraph) with test using `SCS`. The PR for it can be viewed [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/288).
