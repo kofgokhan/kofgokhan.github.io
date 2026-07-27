@@ -25,3 +25,11 @@ I have also submitted a PR for the `Flux` tutorial of ICNN. It can be viewed [he
 This week, we have added another ICNN tuorial, this time using PyTorch. The PR for it can be viewed [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/287). We have also added a small training loop to both `Flux` [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex/) and `PyTorch` [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex_pytorch/) to show the fit on a convex function.
 
 We have also finalized and added [`SoftPlusConicEpigraph`](https://lanl-ansi.github.io/MathOptAI.jl/dev/api/#SoftPlusConicEpigraph) with test using `SCS`. The PR for it can be viewed [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/288).
+
+## Week 7-8
+
+We wanted to implemennt the epigraph formulation of `LeakyReLU` but the way the predictor has been implemented, it wal already working so we just needed to add the tests. PR is [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/293).
+
+The input convex `Flux` [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex/) is updated to include `SoftPlusConicEpigraph`. We just changed the last layer of the ICNN and the fit seems to improve well. We did the same for the PyTorch [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex_pytorch/) as well.
+
+We proceeded to add support for epigraph formulations to `ExaModels`. PR can be found [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/294).
