@@ -28,7 +28,7 @@ We have also finalized and added [`SoftPlusConicEpigraph`](https://lanl-ansi.git
 
 ## Week 7-8
 
-We wanted to implemennt the epigraph formulation of `LeakyReLU` but with the way the predictor has been implemented, it was already working so we just needed to add the tests. PR is [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/293).
+We wanted to implement the epigraph formulation of `LeakyReLU` but with the way the predictor has been implemented, it was already working so we just needed to add the tests. PR is [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/293).
 
 The input convex `Flux` [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex/) is updated to include `SoftPlusConicEpigraph`. We just changed the last layer of the ICNN and the fit seems to improve well. We did the same for the PyTorch [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex_pytorch/) as well.
 
