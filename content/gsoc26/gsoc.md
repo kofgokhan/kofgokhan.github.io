@@ -36,8 +36,8 @@ We proceeded to add support for epigraph formulations to `ExaModels`. PR can be 
 
 ## Week 9-10
 
-We have investigated the application of power activation functions and their formulation using [`PowerCones`](https://jump.dev/JuMP.jl/stable/moi/reference/standard_form/#MathOptInterface.PowerCone)s. Depending on the value of exponent, the function can be concave or convex and the conic formulation can model the hypograph or the epigraph. When used at the end of an ICNN, the epigraph formulation can work together with [`ReLUEpigraph`](https://lanl-ansi.github.io/MathOptAI.jl/stable/api/#ReLUEpigraph) if the power function is convex. When it is concave, the user can built a model with hierarchical objectives to make the optimization work, though this requires caution.
+We have investigated the application of power activation functions and their formulations using [`PowerCone`](https://jump.dev/JuMP.jl/stable/moi/reference/standard_form/#MathOptInterface.PowerCone)s. Depending on the value of the exponent, the function can be concave or convex and the conic formulation can model the hypograph or the epigraph. When used at the end of an ICNN, the epigraph formulation can work together with [`ReLUEpigraph`](https://lanl-ansi.github.io/MathOptAI.jl/stable/api/#ReLUEpigraph) if the power function is convex. When it is concave, the user can build a model with hierarchical objectives to make the optimization work, though this requires caution.
 
 We have added the code to this [issue](https://github.com/lanl-ansi/MathOptAI.jl/issues/308) page, but due to the use case being a niche application, it did not become part of the package.
 
-We hvae also added [`SoftPlusEpigraph`](https://github.com/lanl-ansi/MathOptAI.jl/pull/310) to solve the nonlinear formulation for `SoftPlus` using solvers like `Ipopt`.
+We have also added [`SoftPlusEpigraph`](https://github.com/lanl-ansi/MathOptAI.jl/pull/310) to solve the nonlinear formulation of `SoftPlus` using solvers like `Ipopt`.
