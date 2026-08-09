@@ -33,3 +33,11 @@ We wanted to implement the epigraph formulation of `LeakyReLU` but with the way 
 The input convex `Flux` [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex/) is updated to include `SoftPlusConicEpigraph`. We just changed the last layer of the ICNN and the fit seems to improve well. We did the same for the PyTorch [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_convex_pytorch/) as well.
 
 We proceeded to add support for epigraph formulations to `ExaModels`. PR can be found [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/294).
+
+## Week 9-10
+
+We have investigated the application of power activation functions and their formulation using [`PowerCones`](https://jump.dev/JuMP.jl/stable/moi/reference/standard_form/#MathOptInterface.PowerCone)s. Depending on the value of exponent, the function can be concave or convex and the conic formulation can model the hypograph or the epigraph. When used at the end of an ICNN, the epigraph formulation can work together with [`ReLUEpigraph`](https://lanl-ansi.github.io/MathOptAI.jl/stable/api/#ReLUEpigraph) if the power function is convex. When it is concave, the user can built a model with hierarchical objectives to make the optimization work, though this requires caution.
+
+We have added the code to this [issue](https://github.com/lanl-ansi/MathOptAI.jl/issues/308) page, but due to the use case being a niche application, it did not become part of the package.
+
+We hvae also added [`SoftPlusEpigraph`](https://github.com/lanl-ansi/MathOptAI.jl/pull/310) to solve the nonlinear formulation for `SoftPlus` using solvers like `Ipopt`.
