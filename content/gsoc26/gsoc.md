@@ -41,3 +41,7 @@ We have investigated the application of power activation functions and their for
 We have added the code to this [issue](https://github.com/lanl-ansi/MathOptAI.jl/issues/308) page, but due to the use case being a niche application, it did not become part of the package.
 
 We have also added [`SoftPlusEpigraph`](https://github.com/lanl-ansi/MathOptAI.jl/pull/310) to solve the nonlinear formulation of `SoftPlus` using solvers like `Ipopt`.
+
+## Week 11-12
+
+We have added another [tutorial](https://lanl-ansi.github.io/MathOptAI.jl/stable/tutorials/input_supermodular/), this time for Input Supermodular Neural Networks (ISNN). It is very similar to ICNN tutorial but this time we have a more interesting example and the benefit is that the surrogate model will yield the same integer solution as the original one. PR can be found [here](https://github.com/lanl-ansi/MathOptAI.jl/pull/315).
