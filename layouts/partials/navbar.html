@@ -22,9 +22,10 @@
                 -->
                 <a class="nav-link" href="{{ relURL " /gsoc26" }}">GSoC '26</a>
                 <a class="nav-link" href="{{ relURL " /misc" }}">Misc</a>
-                <button class="btn btn-sm btn-outline-secondary"
-                    onclick="let h=document.getElementById('html-root'),t=h.getAttribute('data-bs-theme')==='dark'?'light':'dark';h.setAttribute('data-bs-theme',t);localStorage.setItem('theme',t)">Toggle
-                    Theme</button>
+                <button class="btn btn-link nav-link p-2" aria-label="Toggle theme"
+                    onclick="let h=document.documentElement,t=h.getAttribute('data-bs-theme')==='dark'?'light':'dark';h.setAttribute('data-bs-theme',t);localStorage.setItem('theme',t)">
+                    <span class="material-symbols-outlined">invert_colors</span>
+                </button>
             </nav>
         </div>
     </div>
