@@ -15,13 +15,16 @@
                     <a href="https://github.com/kofgokhan"><img src="/assets/github.svg" alt=""></a>
                 </span>
 
-                <a class="nav-link" href="{{ relURL "/" }}">Home</a>
+                <a class="nav-link" href="{{ relURL " /" }}">Home</a>
                 <!--
                 <a class="nav-link" href="{{ relURL "/research" }}">Research</a>
                 <a class="nav-link" href="{{ relURL "/publications" }}">Publications</a>
                 -->
-                <a class="nav-link" href="{{ relURL "/gsoc26" }}">GSoC '26</a>
-                <a class="nav-link" href="{{ relURL "/misc" }}">Misc</a>
+                <a class="nav-link" href="{{ relURL " /gsoc26" }}">GSoC '26</a>
+                <a class="nav-link" href="{{ relURL " /misc" }}">Misc</a>
+                <button class="btn btn-sm btn-outline-secondary"
+                    onclick="let h=document.getElementById('html-root'),t=h.getAttribute('data-bs-theme')==='dark'?'light':'dark';h.setAttribute('data-bs-theme',t);localStorage.setItem('theme',t)">Toggle
+                    Theme</button>
             </nav>
         </div>
     </div>

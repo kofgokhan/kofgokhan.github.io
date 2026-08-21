@@ -2,8 +2,11 @@
 <html data-bs-theme="dark">
 
 <head>
+    <script>document.documentElement.setAttribute('data-bs-theme', localStorage.getItem('theme') || 'dark');</script>
     {{ partial "head.html" . }}
     <title>{{ .Site.Title }}</title>
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=invert_colors" />
 </head>
 
 <body>
