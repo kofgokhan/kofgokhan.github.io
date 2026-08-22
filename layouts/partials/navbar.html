@@ -11,17 +11,18 @@
                 <h5>Gökhan Kof</h5>
 
                 <span class="mb-3">
-                    <a href="mailto:kofgokhan@gmail.com"><img src="/assets/envelope-at.svg" alt=""></a>
+                    <a href="mailto:kofgokhan@gmail.com"><span
+                            class="material-symbols-outlined align-middle">mail</span></a>
                     <a href="https://github.com/kofgokhan"><img src="/assets/github.svg" alt=""></a>
                 </span>
 
-                <a class="nav-link" href="{{ relURL "/" }}">Home</a>
+                <a class="nav-link" href="{{ relURL " /" }}">Home</a>
                 <!--
                 <a class="nav-link" href="{{ relURL "/research" }}">Research</a>
                 <a class="nav-link" href="{{ relURL "/publications" }}">Publications</a>
                 -->
-                <a class="nav-link" href="{{ relURL "/gsoc26/gsoc" }}">GSoC '26</a>
-                <a class="nav-link" href="{{ relURL "/misc" }}">Misc</a>
+                <a class="nav-link" href="{{ relURL " /gsoc26/gsoc" }}">GSoC '26</a>
+                <a class="nav-link" href="{{ relURL " /misc" }}">Misc</a>
                 <button class="btn btn-link nav-link p-2" aria-label="Toggle theme"
                     onclick="let h=document.documentElement,t=h.getAttribute('data-bs-theme')==='dark'?'light':'dark';h.setAttribute('data-bs-theme',t);localStorage.setItem('theme',t)">
                     <span class="material-symbols-outlined">invert_colors</span>
