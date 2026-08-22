@@ -112,3 +112,5 @@
     font-weight: 900;
     font-style: italic;
 }
+
+[data-bs-theme="dark"] .github-cat { filter: invert(1); }
