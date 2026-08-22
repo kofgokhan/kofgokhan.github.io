@@ -113,4 +113,4 @@
     font-style: italic;
 }
 
-[data-bs-theme="dark"] .github-cat { filter: invert(1); }
+[data-bs-theme="dark"] .github-logo { filter: invert(1); }
